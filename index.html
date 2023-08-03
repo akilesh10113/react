@@ -1,32 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+    body{
+        background-image: url("FOTO-GRUPO-EQUIPO-LEVANTA-COPA_5AM1374Thumb.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment:fixed ;
+        color: white;
+    }
+    ol{
+        font-size: larger;
+        color: rgb(255, 255, 255);
+        text-align: left;
+    }
+    h1{
+        font-size: larger;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    h2{
+        font-size: small;
+        color: rgb(255, 255, 255);
+        font-style: unset;
+        text-align: center;
+    }
+    h3{
+        font-size: larger;
+        color: rgb(255, 255, 255);
+    }
+    h4{
+        font-size: larger;
+        color: white;
+        text-align: left;
+    }
+    h4{
+        text-align: left;
+    }
+    ol2{
+        font-size: larger;
+        color: rgb(255, 255, 255);
+        text-align: left;
+    }
+    html {
+font-family: "Permanent ";
+font-size: 2em;
+}
+
+.container {
+&--section {
+margin-bottom: 2em;
+}
+
+&--main {
+padding: 0.5em;
+margin: 0 auto;
+text-align: center;
+width: 70%;
+
+@media screen and (max-width: 415px) {
+  width: 80%;
+}
+}
+}
+
+.container--choice {
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.container--field {
+background-color: #000000;
+border-radius: 10px;
+color: #fff;
+display: grid;
+grid-auto-flow: column;
+grid-gap: 10px;
+grid-template-rows: repeat(12, 1fr);
+grid-template-columns: repeat(4, 1fr);
+padding: 1em;
+}
+
+.player, label {
+align-items: center;
+display: flex;
+justify-content: center;
+}
+
+.player-goalkeeper {
+grid-row: span 12; 
+}
+
+.player-one, .player-two, .player-three, .player-four, .player-five, .player-six, .player-seven, .player-eight {
+grid-row: span 3;
+}
+
+.player-nine, .player-ten {
+grid-row: span 6;
+}
+
+input[type=radio] {
+visibility: hidden;
+position: absolute;
+
+&:checked + span:before {
+content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="86" height="79" viewBox="0 0 86 79"><path fill="none" stroke="#000" stroke-linecap="round" stroke-opacity=".763" stroke-width="4" d="M24.275 22.274c-4.16 5.035-8.976 9.593-12.48 15.105C-1.973 59.035-5.756 82.195 31.068 75.928c22.084-3.759 58.421-29.763 51.918-56.953-4.652-19.45-45.289-21.323-60.008-9.03C10.552 20.325 9.242 37.38 18.914 45.368"/></svg>');
+position: absolute;
+top: -10px;
+left: -20px;
+}
+}
+
+span {
+cursor: pointer;
+position: relative;
+}
+    .grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: #ffffff;
+padding: 10px;
+}
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(255, 255, 255, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+    
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>AKILESH</title>
     <div>
-    <h1>My Profile</h1>
-    <h2>I am Akilesh from 2nd year AI&DS</h2>
+    <h1>UEFA Champions League</h1>
     </div>
  
-    <h3>I Love Football</h3>
+    <h3>Real Madrid</h3>
         <ol2>
-            The Best Player in Football is Messi
+             Hala Madrid
         </ol2>
 
     <div>
-    <h4>I love movies</h4>
+
+    <h4 >  Starting X1</h4>
         <ol1>
-            LEO
+            Nava(GK),Serigo Ramos(CB),Varne(CB),Carvajal(RB),Marcelo(LB),
+            Modric(CM),Kross(CM),Casmerio(DM),Benzema(CF),Ronaldo(LW),Bale(RW)
         </ol1>
 </div>
     <a href="www.google.com">AKILESH</a>
 
     <center>
-    <img src="vecteezy_colorful-welcome-design-template_10925820.jpg" width="1500" height="500">
+    <img src="15176721133063.jpg" width="1000" height="500">
     </center>
-<button onclick="myfunction()">Click ME</button>
-<p id="meme"></p>
 <script>
     function myfunction(){
         document.getElementById("meme").innerHTML = "hello";
@@ -34,40 +164,121 @@
 </script>
 </head>
 <body>
-    <style>
-        ol{
-            font-size: larger;
-            color: aqua;
-            text-align: left;
-        }
-        h1{
-            font-size: larger;
-            color: rgb(12, 121, 218);
-            text-align: center;
-        }
-        h2{
-            font-size: small;
-            color: chartreuse;
-            font-style: unset;
-            text-align: center;
-        }
-        h3{
-            font-size: larger;
-            color: darkseagreen;
-        }
-        ol1{
-            font-size: larger;
-            color: rgb(230, 72, 9);
-            text-align: left;
-        }
-        h4{
-            text-align: left;
-        }
-        ol2{
-            font-size: larger;
-            color: rgb(132, 21, 243);
-            text-align: left;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <div class="container--main">
+      <div class="container--section">
+      <p>Choose your soccer team's formation:</p>
+    <div class="container--choice">
+      <label for="442" onClick="check();">
+        <input checked type="radio" id="442" name="formation">
+        <span>442</span>
+      </label>
+      <label for="433" onClick="check();">
+        <input type="radio" id="433" name="formation">
+        <span>433</span>
+      </label>
+      <label for="343" onClick="check();">
+        <input type="radio" id="343" name="formation">
+        <span>343</span>
+      </label>
+    </div>
+    </div>
+    
+    
+    <div class="container--field container--section">
+      <div class="player player-goalkeeper">Navas</div>
+      <div class="player player-one">Marcelo</div>
+      <div class="player player-two">Ramos</div>
+      <div class="player player-three">Varne</div>
+      <div class="player player-four">Carvajal</div>
+      <div class="player player-five">Kroos</div>
+      <div class="player player-six">Casmerio</div>
+      <div class="player player-seven">Modric</div>
+      <div class="player player-eight">Ronaldo</div>
+      <div class="player player-nine">Benzema</div>
+      <div class="player player-ten">Bale</div>
+    </div>
+    </div>
+    <h1>Substitutes</h1>
+    <div>Casillas (GK) </div>
+    <div>Asencio</div>
+    <div>Nacho</div>  
+    <div>Isco</div>  
+    <div>Kovacic</div>  
+  </div>
+    <h1>Upcoming Fixtures</h1>
+
+    <div class="flex-container">
+      <div>Real Madrid VS Barcelona</div>
+      <div>Real Madrid VS Bayern Munich</div>
+      <div>Real Madrid VS Chelsea</div>  
+    </div>
+    <script>
+        function check() {
+    if (document.getElementById("433").checked) {
+    move433();
+    }
+
+    if (document.getElementById("442").checked) {
+    move442();
+    }
+
+    if (document.getElementById("343").checked) {
+    move343();
+    }
+}
+
+function move433() {
+    span3 = document.querySelectorAll(
+    ".player-one, .player-two, .player-three, .player-four"
+    );
+    span4 = document.querySelectorAll(
+    ".player-five, .player-six, .player-seven, .player-eight, .player-nine, .player-ten"
+    );
+
+    for (var i = 0, len = span3.length; i < len; i++) {
+    span3[i].style.setProperty("grid-row", "span 3");
+    }
+
+    for (var i = 0, len = span4.length; i < len; i++) {
+    span4[i].style.setProperty("grid-row", "span 4");
+    }
+}
+
+function move442() {
+    span3 = document.querySelectorAll(
+    ".player-one, .player-two, .player-three, .player-four, .player-five, .player-six, .player-seven, .player-eight"
+    );
+    span6 = document.querySelectorAll(".player-nine, .player-ten");
+
+    for (var i = 0, len = span3.length; i < len; i++) {
+    span3[i].style.setProperty("grid-row", "span 3");
+    }
+
+    for (var i = 0, len = span6.length; i < len; i++) {
+    span6[i].style.setProperty("grid-row", "span 6");
+    }
+}
+
+function move343() {
+    span3 = document.querySelectorAll(
+    ".player-four, .player-five, .player-six, .player-seven"
+    );
+    span4 = document.querySelectorAll(
+    ".player-one, .player-two, .player-three, .player-eight, .player-nine, .player-ten"
+    );
+
+    for (var i = 0, len = span3.length; i < len; i++) {
+    span3[i].style.setProperty("grid-row", "span 3");
+    }
+
+    for (var i = 0, len = span4.length; i < len; i++) {
+    span4[i].style.setProperty("grid-row", "span 4");
+    }
+}
+    </script> 
+      <button onclick="myfunction()">Click ME</button>
+      <p id="meme"></p>
 </body>
 </html>
